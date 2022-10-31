@@ -1,0 +1,103 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../1.2 multiple provider"
+		},
+		{
+			"path": "../1.3 Immutable"
+		},
+		{
+			"path": "../1.4 Count"
+		},
+		{
+			"path": "../1.5 For each Map"
+		},
+		{
+			"path": "../1.6 For each Set"
+		},
+		{
+			"path": "../1.7 Create Before Destroy"
+		},
+		{
+			"path": "../1.8 Prevent Destroy"
+		},
+		{
+			"path": "../1.9 Ignore Changes"
+		},
+		{
+			"path": "../1.10 Depends On"
+		},
+		{
+			"path": "../2.1 Variables Basic"
+		},
+		{
+			"path": "../2.2 Variables when prompted"
+		},
+		{
+			"path": "../2.3 Variables override with CLI"
+		},
+		{
+			"path": "../2.4 Variables override with ENV"
+		},
+		{
+			"path": "../2.5 Variables with tfvars"
+		},
+		{
+			"path": "../2.6 Variables with multiple tfvars"
+		},
+		{
+			"path": "../2.7 Variables with auto tfvars"
+		},
+		{
+			"path": "../2.8 Variables with List"
+		},
+		{
+			"path": "../2.9 Variables with Map"
+		},
+		{
+			"path": "../2.10 Variables with File"
+		},
+		{
+			"path": "../2.11 Variables with Secrets"
+		},
+		{
+			"path": "../2.12 Outputs"
+		},
+		{
+			"path": "../2.13 Locals"
+		},
+		{
+			"path": "../2.14 Data Sources"
+		},
+		{
+			"path": "../3.1 State"
+		},
+		{
+			"path": "../3.2 State Locking"
+		},
+		{
+			"path": "../3.3 State Commands"
+		},
+		{
+			"path": "../3.4 Workspaces"
+		},
+		{
+			"path": "../4.1 File Provisioner"
+		},
+		{
+			"path": "../4.2 Remote Provisioner"
+		},
+		{
+			"path": "../4.3 Local Provisioner"
+		},
+		{
+			"path": "../4.4 Provider"
+		},
+		{
+			"path": "../5.1 Modules"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../3.2 State Locking"
+		},
+		{
+			"path": "../3.3 State Commands"
+		},
+		{
+			"path": "../3.4 Workspaces"
+		},
+		{
+			"path": "../4.1 File Provisioner"
+		},
+		{
+			"path": "../4.2 Remote Provisioner"
+		},
+		{
+			"path": "../4.3 Local Provisioner"
+		},
+		{
+			"path": "../4.4 Provider"
+		},
+		{
+			"path": "../5.1 Modules"
+		}
+	]
+}
