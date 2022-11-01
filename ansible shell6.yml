@@ -1,0 +1,9 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  vars:
+   message: ICU Online > /tmp/icu_online && echo ICU Online 
+  tasks:
+   
+   - name: Using shell with variable
+     shell: "echo {{ message | quote }} > /tmp/test_file"

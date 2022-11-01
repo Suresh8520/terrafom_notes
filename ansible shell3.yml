@@ -1,0 +1,14 @@
+ - hosts: all
+   remote_user: ec2-user
+   become: yes
+   tasks: 
+    
+    - name: Using shell, args, environment & loop
+      shell: echo "Hello Guys" > $TARGET
+      args:
+       chdir: /tmp
+      environment:
+       TARGET: "{{ item }}"
+      loop:
+       - test_file1
+       - test_file2

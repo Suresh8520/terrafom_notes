@@ -1,0 +1,21 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  tasks:
+   
+   - name: Create a File
+     file:
+      path: /tmp/file1
+      state: touch
+
+   - name: Create a File with Symlink
+     file:
+      src: /tmp/file1
+      dest: /etc/file1_link
+      state: link 
+
+   - name: Remove a Symlink file
+     file:
+      path: /tmp/file1_symlink
+      state: absent
+

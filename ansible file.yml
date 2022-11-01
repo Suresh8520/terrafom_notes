@@ -1,0 +1,14 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  tasks:
+   
+   - name : Create a File
+     file:
+      path: /tmp/file1
+      state: touch
+
+   - name: Remove a File
+     file:
+      path: /tmp/file1
+      state: absent   

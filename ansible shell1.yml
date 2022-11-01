@@ -1,0 +1,10 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  tasks: 
+   
+   - name : Run command with shell
+     shell: echo "Hello ICU Shell" > /tmp/shell_file
+
+   - name: Run command with command 
+     command: echo "Hello ICU Command" > /tmp/command_file  

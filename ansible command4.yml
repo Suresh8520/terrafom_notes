@@ -1,0 +1,14 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  tasks:
+   
+   - name: Create A Directory
+     file:
+      path: /tmp/command_dir
+      state: directory 
+
+   - name: Create a file in the directory 
+     command: touch test_file
+     args:
+      chdir: /tmp/command_dir    

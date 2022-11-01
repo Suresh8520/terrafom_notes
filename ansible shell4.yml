@@ -1,0 +1,9 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  vars:
+   message: Hello Guys!
+  tasks:
+   
+   - name: Using shell with variable
+     shell: "echo {{ message }} > /tmp/test_file"

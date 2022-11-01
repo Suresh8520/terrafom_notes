@@ -1,0 +1,17 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  vars:
+   env : staging
+   ansible_version: v.1.1
+  tasks: 
+   
+   - name: template to remote hosts 
+     template:
+      src: "{{ item }}.j2"
+      dest: "/tmp/{{ item }}"
+      mode: 0600
+
+     loop:
+      - ansibleadv.conf 
+      - ansible.conf 

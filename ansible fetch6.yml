@@ -1,0 +1,20 @@
+- hosts: all
+  remote_user: ec2-user
+  tasks:
+   
+   - name : Create a File
+     copy:
+      dest: "/home/{{ ansible_user }}/{{ item }}"
+      content: "{{ ansible_host }}"
+     loop:
+      - test_file1 
+      - test_file2
+
+   - name: Fetch test_file1 
+     fetch:
+      src: "/home/{{ ansible_user }}/{{ item }}"
+      dest: "fetched/test_file.{{ inventory_hostname }}"
+      flat: true
+     loop:
+      - test_file1
+      - test_file2   

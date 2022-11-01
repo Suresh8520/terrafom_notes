@@ -1,0 +1,17 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  tasks:
+   
+   - name: Create a directory
+     file:
+      path: $HOME/test_dir1
+      state: directory
+
+   - name: Change A file Permissions and Ownership
+     file: 
+      path: "/home/{{ ansible_user }}/test_dir1"
+      state: directory
+      owner: root
+      group: root
+      mode: 0721

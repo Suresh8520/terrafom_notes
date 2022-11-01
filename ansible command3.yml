@@ -1,0 +1,11 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  tasks:
+   
+   - name : Create a file
+     command: echo "Hello Guys!" > /tmp/command_file2
+     register: command_output
+
+   - name : Debugging the output 
+     debug: vars=command_output

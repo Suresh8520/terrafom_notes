@@ -1,0 +1,12 @@
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  vars:
+   env : staging
+  tasks: 
+   
+   - name: template to remote hosts 
+     template:
+      src: goutham.conf.j2
+      dest: /tmp/goutham.conf
+      mode: 0600
